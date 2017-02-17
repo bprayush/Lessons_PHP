@@ -18,10 +18,12 @@
 		<th>User</th>
 		<th>Age</th>
 	</tr>
-	<tr>
-		<td><?php   //echo the name here fetched from database?></td>
-		<td><?php    //echo the age here fetched from database?></td>
-	</tr>
+	<?php //remember we used loop toprint all the data in the table? ?>
+		<tr>
+			<td><?php   //echo the name here fetched from database?></td>
+			<td><?php    //echo the age here fetched from database?></td>
+		</tr>
+	<?php ?>
 
 </table>
 

@@ -4,7 +4,7 @@
 		$db_host = "localhost";
 		$db_user = "root";
 		$db_key = "";
-		$db_name = "lol";
+		$db_name = "mydatabase";
 
 		mysql_connect($db_host, $db_user, $db_key) or die(mysql_error());
 		$connection = mysql_select_db($db_name) or die(mysql_error());
@@ -29,7 +29,6 @@
 
 	//SECTION 10
 	/*
-		$dataArray[] = array();
 		while($data = mysql_fetch_assoc($result))
 		{
 			$dataArray[] = $data;
@@ -38,11 +37,11 @@
 		foreach($dataArray as $HorscopeData)
 		{
 			echo "-------------------------------------<br>";
-			echo "Horscope: ".$data['name']."<br>";
-			echo "Description: ".$data['description']."<br>";
+			echo "Horscope: ".$HorscopeData['name']."<br>";
+			echo "Description: ".$HorscopeData['description']."<br>";
 			echo "-------------------------------------<br>";
 		}
-	*/	
+	*/
 
 	//SECTION 11
 	/*
@@ -56,5 +55,8 @@
 	//SECTION 12
 	/*
 		$query = "INSERT INTO table_name(Name, Age, Gender) VALUES('$name', $age)";
+		$queryResult = mysql_query() or die(mysql_error());
+
+		
 	*/
 ?>
